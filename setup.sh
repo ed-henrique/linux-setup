@@ -84,7 +84,7 @@ sudo gsettings set org.gnome.desktop.default-applications.terminal exec "/opt/Hy
 # Change background
 ###############################################################################
 
-sudo gsettings set org.gnome.desktop.background picture-uri "file:///assets/bg.jpg"
+# sudo gsettings set org.gnome.desktop.background picture-uri "file:///assets/bg.jpg"
 
 # Update system
 ###############################################################################
