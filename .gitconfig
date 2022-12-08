@@ -1,0 +1,7 @@
+[user]
+	email = edu.hen.fm@gmail.com
+	name = Eduardo Henrique
+[init]
+	defaultBranch = main
+[alias]
+	go = !git add . && git commit -s -m
