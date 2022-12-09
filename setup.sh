@@ -3,18 +3,11 @@
 # Update system
 ###############################################################################
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 # Install Apps
 ###############################################################################
-
-# AppImage Launcher
-###################
-
-sudo add-apt-repository ppa:appimagelauncher-team/stable
-sudo apt update
-sudo apt install appimagelauncher
 
 # NVM
 #####
@@ -35,15 +28,15 @@ sudo snap install flutter --classic
 # VS Code
 #########
 
-sudo apt-get install wget gpg
+sudo apt-get install wget gpg -y
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code
+sudo apt install apt-transport-https -y
+sudo apt update -y
+sudo apt install code -y
 
 # Flameshot
 ###########
@@ -89,5 +82,5 @@ sudo gsettings set org.gnome.desktop.default-applications.terminal exec "/opt/Hy
 # Update system
 ###############################################################################
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
